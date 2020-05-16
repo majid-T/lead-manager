@@ -1,5 +1,5 @@
 from leads.models import Lead
-from rest_framwork import viewsets, permissions
+from rest_framework import viewsets, permissions
 from .serializers import LeadSerializer
 
 # Viewset

@@ -1,6 +1,7 @@
-#Serializer to serialize QuerySets to JSON objects
+# Serializer to serialize QuerySets to JSON objects
 from rest_framework import serializers
-from leads.model import Lead
+from leads.models import Lead
+
 
 class LeadSerializer(serializers.ModelSerializer):
     class Meta:
