@@ -1,0 +1,24 @@
+{
+  "name": "lead-manager",
+  "version": "1.0.0",
+  "description": "lead manager app with python-django-react-redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majid-T/lead-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/majid-T/lead-manager/issues"
+  },
+  "homepage": "https://github.com/majid-T/lead-manager#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
