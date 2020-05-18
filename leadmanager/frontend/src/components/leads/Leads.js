@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connext, connect } from "react-redux";
 import PropTypes from "prop-types";
-import { getLeads } from "../../actions/leads";
+import { getLeads, deleteLead } from "../../actions/leads";
 
 export class Leads extends Component {
   static propTypes = {
@@ -34,7 +34,12 @@ export class Leads extends Component {
                 <td>{lead.email}</td>
                 <td>{lead.message}</td>
                 <td>
-                  <button className="btn btn-danger btn-sm">DELETE</button>
+                  <button
+                    className="btn btn-danger btn-sm"
+                    onClick={this.props.deleteLead.bind(this, lead.id)}
+                  >
+                    DELETE
+                  </button>
                 </td>
               </tr>
             ))}
@@ -49,4 +54,4 @@ const mapStateToProps = (state) => ({
   leads: state.leads.leads,
 });
 
-export default connect(mapStateToProps, { getLeads })(Leads);
+export default connect(mapStateToProps, { getLeads, deleteLead })(Leads);
